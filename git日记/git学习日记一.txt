@@ -1,0 +1,15 @@
+1. git克隆
+M1: git clone <repository> <directory>
+M2: git clone --bare <repository> <directory.git>
+M3: git clone --mirror <repository> <directory.git>
+
+用法：
+M1将<repository>指向的版本库创建一个克隆到<direcotry>目录。目录<directory>相当于克隆版本库的工作区，文件都会检出，版本库位于工作区下的.git目录中。
+M2，M3创建的克隆版本库都不包含工作区，直接就是版本库的内容，这样的版本库称为裸版本库。一般约定俗称裸版本库的目录名以.git为后缀，所以上面示例中将克隆出来的裸版本库目录名写作<directory.git>。
+M3区别与M2之处在于M3克隆出来的裸版本对上游版本库进行了注册，这样可以在裸版本库中使用git fetch命令和上游版本库进行持续同步。
+
+2.git push
+M1：git push [<remote-repos> [<refspec>]]
+
+3.git pull
+M1: git pull [<remote-repos> [<refspec>]]
