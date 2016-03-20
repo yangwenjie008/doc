@@ -2,4 +2,4 @@ import
 from imp import reload
 reload():
 reload是不可传递的，重载一个模块的话只会重载该模块，而不能重载该模块所导入的任何模块。
-dir()
+dir():获得模块内部的可用的变量名的列表。
