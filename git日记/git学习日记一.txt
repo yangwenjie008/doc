@@ -7,9 +7,37 @@ M3: git clone --mirror <repository> <directory.git>
 M1将<repository>指向的版本库创建一个克隆到<direcotry>目录。目录<directory>相当于克隆版本库的工作区，文件都会检出，版本库位于工作区下的.git目录中。
 M2，M3创建的克隆版本库都不包含工作区，直接就是版本库的内容，这样的版本库称为裸版本库。一般约定俗称裸版本库的目录名以.git为后缀，所以上面示例中将克隆出来的裸版本库目录名写作<directory.git>。
 M3区别与M2之处在于M3克隆出来的裸版本对上游版本库进行了注册，这样可以在裸版本库中使用git fetch命令和上游版本库进行持续同步。
+e.g：
+M1： git clone git://github.com/ossxp-com/gitdemo-commit-tree.git i-am-admin //将gitdemo-commit-tree 克隆到本地 i-am-admin目录
+
 
 2.git push
 M1：git push [<remote-repos> [<refspec>]]
 
 3.git pull
 M1: git pull [<remote-repos> [<refspec>]]
+
+4.git init
+M1: git init --bare <directory>
+M2: git init
+
+用法：
+M1 创建一个裸版本库
+M2 创建一个裸版本库带一个工作区
+
+5.git show-ref
+用法：
+查看版本库所包含的引用。
+
+6.git 支持的协议
+SSH协议1:ssh://[user@]example.com[:port]/path/to/repo.git/ 可在URL中设置用户名和端口，默认端口22
+SSH协议2:[user@]example.com:path/to/repo.git/ SCP格式表示法，更简洁。但是非默认端口需要通过其他方式（如主机别名方式）设定
+GIT协议:git://example.com[:port]/path/to/repo.git/ 最常用的只读协议
+HTTP[S]协议:http[s]://example.com[:port]/path/to/repo.git/ 兼有只能协议和哑协议
+FTP[S]协议:ftp[s]://example.com[:port]/path/to/repo.git/  哑协议
+RSYNC协议:rsyn://example.com/path/to/repo.git/  哑协议
+本地协议1:file:///path/to/repo.git
+本地协议2:/path/to/repo.git  和file://格式的本地协议类似，但有细微差别。例如克隆时不支持浅克隆，且采用直接的硬连接实现克隆
+
+
+

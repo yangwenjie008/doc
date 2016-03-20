@@ -1,0 +1,9 @@
+1. git clone <repository> <dir>
+2. cd dir
+   git config user.name user1
+   git config user.email user1@sun.ossxp.com
+3. git add README
+   git commit -m "initial commit."
+4. git push file:///e/GitRoot/shared.git/ master
+5. 禁止强制push
+   git --git-dir=shared.git config receive.denyNonFastForwards true
