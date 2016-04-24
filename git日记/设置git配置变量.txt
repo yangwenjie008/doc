@@ -1,0 +1,43 @@
+1.配置Git当前用户的姓名和邮件地址，配置的用户名和邮件地址将在版本库提交时用到。
+
+git config --global user.name "Your name"
+git config --global user.email "Your Email"
+
+2.设置一些git别名，以便可以使用更为简洁的子命令
+
+>系统管理员权限，希望注册的命令别名能够被所有用户使用，可以执行如下命令。
+
+sudo git config --system alias.st status
+sudo git config --system alias.ci commit
+sudo git config --system alias.co checkout
+sudo git config --system alias.br branch
+
+>只在本用户的全局配置中添加Git命令别名
+
+git config --global alias.st status
+git config --global alias.ci commit
+git config --global alias.co checkout
+git config --global alias.br branch
+
+3.在git 命令输出中开启颜色显示
+
+git config --global color.ui true
+
+
+4.git 中文支持
+
+> 采用UTF-8字符集，如果git status -s 显示中文为乱码：
+
+Aaron@Aaron-PC MINGW64 /f/gitroot/doc/git日记 (master)
+$ git status -s
+?? "\350\256\276\347\275\256git\351\205\215\347\275\256\345\217\230\351\207\217.txt"
+
+解决方案：
+git config --global core.quotepath false
+
+>采用GBK字符集
+git config --global i18n.logOutputEncoding gbk
+git config --global i18n.commitEncoding gbk
+
+
+
