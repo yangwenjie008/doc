@@ -1,0 +1,11 @@
+1.工作区和暂存区比较
+
+git diff
+
+2.暂存区和HEAD比较
+
+git diff --cached
+
+3.工作区和 HEAD比较
+
+git diff HEAD
