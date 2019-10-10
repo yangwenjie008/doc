@@ -1,4 +1,3 @@
-1.配置Git当前用户的姓名和邮件地址，配置的用户名和邮件地址将在版本库提交时用到。
 
 git config --global user.name "Your name"
 git config --global user.email "Your Email"
@@ -40,4 +39,6 @@ git config --global i18n.logOutputEncoding gbk
 git config --global i18n.commitEncoding gbk
 
 
+5.使用 credential helper to tell Git to remember your github profile every time it talks to #GitHub
+git config --global credential.helper wincred
 
