@@ -5,7 +5,7 @@
 <node CREATED="1584640758693" ID="ID_1339036587" MODIFIED="1584641684370" POSITION="left" TEXT="J2EE">
 <node CREATED="1584641686606" ID="ID_441926254" MODIFIED="1584644269232" TEXT="&#x6570;&#x636e;&#x5e93;">
 <node CREATED="1584644294795" ID="ID_1848163651" MODIFIED="1584644305139" TEXT="&#x7406;&#x8bba;&#x57fa;&#x7840;">
-<node CREATED="1584641693557" ID="ID_974149423" MODIFIED="1584642580434" TEXT="&#x4e8b;&#x52a1;">
+<node CREATED="1584641693557" ID="ID_974149423" MODIFIED="1587815955550" TEXT="&#x4e8b;&#x52a1;">
 <node CREATED="1584641718266" ID="ID_1267596382" MODIFIED="1584644156128" TEXT="4&#x5927;&#x7279;&#x6027;">
 <node CREATED="1584641768222" ID="ID_786296154" MODIFIED="1584642664587" TEXT="&#x539f;&#x5b50;&#x6027;(Atomicity)">
 <richcontent TYPE="NOTE"><html>
@@ -31,7 +31,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1584641921139" ID="ID_1402072006" MODIFIED="1584643395198" TEXT="&#x9694;&#x79bb;&#x6027;&#xff08;Isolation&#xff09;">
+<node CREATED="1584641921139" ID="ID_1402072006" MODIFIED="1587815977640" TEXT="&#x9694;&#x79bb;&#x6027;&#xff08;Isolation&#xff09;">
 <richcontent TYPE="NOTE">&lt;html&gt;
   &lt;head&gt;
     
@@ -107,7 +107,7 @@ update account set money=money - 100 where name=&amp;#8217;A&lt;/pre&gt;
     &lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</richcontent>
-<node CREATED="1584643852572" ID="ID_808182743" MODIFIED="1584644181564" TEXT="4&#x79cd;&#x9694;&#x79bb;&#x7ea7;&#x522b;">
+<node CREATED="1584643852572" ID="ID_808182743" MODIFIED="1587817814050" TEXT="4&#x79cd;&#x9694;&#x79bb;&#x7ea7;&#x522b;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -177,15 +177,65 @@ update account set money=money - 100 where name=&amp;#8217;A&lt;/pre&gt;
     <p style="margin-top: 10px; margin-bottom: 10px; margin-right: 0; margin-left: 0; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-indent: 0px; color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(245, 250, 254)">
       
     </p>
-    <p style="margin-top: 10px; margin-bottom: 10px; margin-right: 0; margin-left: 0; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-indent: 0px; color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(245, 250, 254)">
-      
-    </p>
   </body>
-</html></richcontent>
-<node CREATED="1584643886292" ID="ID_102175475" MODIFIED="1584643964250" TEXT="Serializable (&#x4e32;&#x884c;&#x5316;)&#xff1a;&#x53ef;&#x907f;&#x514d;&#x810f;&#x8bfb;&#x3001;&#x4e0d;&#x53ef;&#x91cd;&#x590d;&#x8bfb;&#x3001;&#x5e7b;&#x8bfb;&#x7684;&#x53d1;&#x751f;"/>
-<node CREATED="1584643919808" ID="ID_832178604" MODIFIED="1584643922310" TEXT="Repeatable read (&#x53ef;&#x91cd;&#x590d;&#x8bfb;)&#xff1a;&#x53ef;&#x907f;&#x514d;&#x810f;&#x8bfb;&#x3001;&#x4e0d;&#x53ef;&#x91cd;&#x590d;&#x8bfb;&#x7684;&#x53d1;&#x751f;"/>
-<node CREATED="1584643931419" ID="ID_1488886049" MODIFIED="1584643933983" TEXT="Read committed (&#x8bfb;&#x5df2;&#x63d0;&#x4ea4;)&#xff1a;&#x53ef;&#x907f;&#x514d;&#x810f;&#x8bfb;&#x7684;&#x53d1;&#x751f;"/>
-<node CREATED="1584643941243" ID="ID_1811106332" MODIFIED="1584643943575" TEXT="Read uncommitted (&#x8bfb;&#x672a;&#x63d0;&#x4ea4;)&#xff1a;&#x6700;&#x4f4e;&#x7ea7;&#x522b;&#xff0c;&#x4efb;&#x4f55;&#x60c5;&#x51b5;&#x90fd;&#x65e0;&#x6cd5;&#x4fdd;&#x8bc1;"/>
+</html>
+</richcontent>
+<node CREATED="1584643886292" ID="ID_102175475" MODIFIED="1587817995001" TEXT="Serializable (&#x4e32;&#x884c;&#x5316;)&#xff1a;&#x53ef;&#x907f;&#x514d;&#x810f;&#x8bfb;&#x3001;&#x4e0d;&#x53ef;&#x91cd;&#x590d;&#x8bfb;&#x3001;&#x5e7b;&#x8bfb;&#x7684;&#x53d1;&#x751f;">
+<richcontent TYPE="NOTE">&lt;html&gt;
+  &lt;head&gt;
+    
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      &amp;#24403;&amp;#25968;&amp;#25454;&amp;#24211;&amp;#31995;&amp;#32479;&amp;#20351;&amp;#29992;SERIALIZABLE&amp;#38548;&amp;#31163;&amp;#32423;&amp;#21035;&amp;#26102;&amp;#65292;&amp;#19968;&amp;#20010;&amp;#20107;&amp;#21153;&amp;#22312;&amp;#25191;&amp;#34892;&amp;#36807;&amp;#31243;&lt;content ename=&quot;content&quot;&gt;&amp;#20013;&amp;#23436;&amp;#20840;&amp;#30475;&amp;#19981;&amp;#21040;&amp;#20854;&amp;#20182;&amp;#20107;&amp;#21153;&amp;#23545;&amp;#25968;&amp;#25454;&amp;#24211;&amp;#25152;&amp;#20570;&amp;#30340;&amp;#26356;&amp;#26032;&amp;#12290;&amp;#24403;&amp;#20004;&amp;#20010;&amp;#20107;&amp;#21153;&amp;#21516;&amp;#26102;&amp;#25805;&amp;#20316;&amp;#25968;&amp;#25454;&amp;#24211;&amp;#20013;&amp;#30456;&amp;#21516;&amp;#25968;&amp;#25454;&amp;#26102;&amp;#65292;&amp;#22914;&amp;#26524;&amp;#31532;&amp;#19968;&amp;#20010;&amp;#20107;&amp;#21153;&amp;#24050;&amp;#32463;&amp;#22312;&amp;#35775;&amp;#38382;&amp;#35813;&amp;#25968;&amp;#25454;&amp;#65292;&amp;#31532;&amp;#20108;&amp;#20010;&amp;#20107;&amp;#21153;&amp;#21482;&amp;#33021;&amp;#20572;&amp;#19979;&amp;#26469;&amp;#31561;&amp;#24453;&amp;#65292;&amp;#24517;&amp;#39035;&amp;#31561;&amp;#31532;&amp;#19968;&amp;#20010;&amp;#20107;&amp;#21153;&amp;#32467;&amp;#26463;&amp;#21518;&amp;#25165;&amp;#33021;&amp;#24674;&amp;#22797;&amp;#36816;&amp;#34892;&amp;#12290;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richcontent>
+</node>
+<node CREATED="1584643919808" ID="ID_832178604" MODIFIED="1587818063991" TEXT="Repeatable read (&#x53ef;&#x91cd;&#x590d;&#x8bfb;)&#xff1a;&#x53ef;&#x907f;&#x514d;&#x810f;&#x8bfb;&#x3001;&#x4e0d;&#x53ef;&#x91cd;&#x590d;&#x8bfb;&#x7684;&#x53d1;&#x751f;">
+<richcontent TYPE="NOTE">&lt;html&gt;
+  &lt;head&gt;
+    
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      &amp;#24403;&amp;#25968;&amp;#25454;&amp;#24211;&amp;#31995;&amp;#32479;&amp;#20351;&amp;#29992;Repeatable Read&amp;#38548;&amp;#31163;&amp;#32423;&amp;#21035;&amp;#26102;&amp;#65292;&amp;#19968;&amp;#20010;&amp;#20107;&amp;#21153;&amp;#22312;&amp;#25191;&amp;#34892;&amp;#36807;&amp;#31243;&amp;#20013;&amp;#21487;&amp;#20197;&amp;#30475;&amp;#21040;&amp;#20854;&amp;#20182;&amp;#20107;&amp;#21153;&amp;#24050;&amp;#32463;&amp;#25552;&amp;#20132;&amp;#30340;&amp;#26032;&amp;#25554;&amp;#20837;&amp;#30340;&amp;#35760;&amp;#24405;&amp;#65292;&amp;#20294;&amp;#26159;&amp;#19981;&amp;#33021;&amp;#30475;&amp;#21040;&amp;#20854;&amp;#20182;&amp;#20107;&amp;#21153;&amp;#23545;&lt;content ename=&quot;content&quot;&gt;&amp;#24050;&amp;#26377;&amp;#35760;&amp;#24405;&amp;#30340;&amp;#26356;&amp;#26032;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richcontent>
+</node>
+<node CREATED="1584643931419" ID="ID_1488886049" MODIFIED="1587818184171" TEXT="Read committed (&#x8bfb;&#x5df2;&#x63d0;&#x4ea4;)&#xff1a;&#x53ef;&#x907f;&#x514d;&#x810f;&#x8bfb;&#x7684;&#x53d1;&#x751f;">
+<richcontent TYPE="NOTE">&lt;html&gt;
+  &lt;head&gt;
+    
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      &amp;#24403;&amp;#25968;&amp;#25454;&amp;#24211;&amp;#31995;&amp;#32479;&amp;#20351;&amp;#29992;Read Committed&amp;#38548;&amp;#31163;&amp;#32423;&amp;#21035;&amp;#26102;&amp;#65292;&amp;#19968;&amp;#20010;&amp;#20107;&amp;#21153;&amp;#22312;&amp;#25191;&amp;#34892;&amp;#36807;&amp;#31243;&amp;#20013;&amp;#21487;&amp;#20197;&amp;#30475;&amp;#21040;&amp;#20854;&amp;#20182;&amp;#20107;&amp;#21153;&amp;#24050;&amp;#32463;&amp;#25552;&amp;#20132;&amp;#30340;&amp;#26032;&amp;#25554;&amp;#20837;&amp;#30340;&amp;#35760;&amp;#24405;&amp;#65292;&amp;#32780;&amp;#19988;&amp;#36824;&amp;#33021;&amp;#30475;&amp;#21040;&amp;#20854;&amp;#20182;&amp;#20107;&amp;#21153;&amp;#23545;&lt;content ename=&quot;content&quot;&gt;&amp;#24050;&amp;#26377;&amp;#35760;&amp;#24405;&amp;#30340;&amp;#26356;&amp;#26032;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richcontent>
+</node>
+<node CREATED="1584643941243" ID="ID_1811106332" MODIFIED="1587818284321" TEXT="Read uncommitted (&#x8bfb;&#x672a;&#x63d0;&#x4ea4;)&#xff1a;&#x6700;&#x4f4e;&#x7ea7;&#x522b;&#xff0c;&#x4efb;&#x4f55;&#x60c5;&#x51b5;&#x90fd;&#x65e0;&#x6cd5;&#x4fdd;&#x8bc1;">
+<richcontent TYPE="NOTE">&lt;html&gt;
+  &lt;head&gt;
+    
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      &amp;#24403;&amp;#25968;&amp;#25454;&amp;#24211;&amp;#31995;&amp;#32479;&amp;#20351;&amp;#29992;READ UNCOMMITTED&amp;#38548;&amp;#31163;&amp;#32423;&amp;#21035;&amp;#26102;&amp;#65292;&amp;#19968;&amp;#20010;&amp;#20107;&amp;#21153;&amp;#22312;&amp;#25191;&amp;#34892;&amp;#36807;&amp;#31243;&amp;#20013;&amp;#21487;&amp;#20197;&amp;#30475;&amp;#21040;&amp;#20854;&amp;#20182;&amp;#20107;&amp;#21153;&amp;#27809;&amp;#26377;&amp;#25552;&amp;#20132;&amp;#30340;&amp;#26032;&amp;#25554;&amp;#20837;&amp;#30340;&amp;#35760;&amp;#24405;&amp;#65292;&amp;#32780;&amp;#19988;&lt;content ename=&quot;content&quot;&gt;&amp;#36824;&amp;#33021;&amp;#30475;&amp;#21040;&amp;#20854;&amp;#20182;&amp;#20107;&amp;#21153;&amp;#27809;&amp;#26377;&amp;#25552;&amp;#20132;&amp;#30340;&amp;#23545;&amp;#24050;&amp;#26377;&amp;#35760;&amp;#24405;&amp;#30340;&amp;#26356;&amp;#26032;&amp;#12290;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richcontent>
+</node>
 </node>
 </node>
 <node CREATED="1584641991785" ID="ID_1761997258" MODIFIED="1584642620062" TEXT=" &#x6301;&#x4e45;&#x6027;&#xff08;Durability&#xff09;">

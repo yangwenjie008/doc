@@ -65,8 +65,10 @@
 </node>
 </node>
 <node CREATED="1587003609769" ID="ID_940257377" MODIFIED="1587003618164" TEXT="&#x4fdd;&#x6301;&#x5065;&#x5eb7;">
-<node CREATED="1587002887567" ID="ID_1007365835" MODIFIED="1587002978517" TEXT="&#x6bcf;&#x5929;&#x665a;&#x4e0a;20&#x5206;&#x949f;&#x5de6;&#x53f3;&#x7684;&#x953b;&#x70bc;">
+<node CREATED="1587002887567" ID="ID_1007365835" MODIFIED="1587895202982" TEXT="&#x6bcf;&#x5929;&#x665a;&#x4e0a;20&#x5206;&#x949f;&#x5de6;&#x53f3;&#x7684;&#x953b;&#x70bc;">
 <icon BUILTIN="full-0"/>
+<icon BUILTIN="ksmiletris"/>
+<icon BUILTIN="button_ok"/>
 </node>
 <node CREATED="1587003630853" ID="ID_1874369424" MODIFIED="1587003634864" TEXT="&#x65e9;&#x7761;&#x65e9;&#x8d77;">
 <node CREATED="1587003291147" ID="ID_483257620" MODIFIED="1587003403165" TEXT="&#x6212;&#x6389;&#x738b;&#x8005;&#x8363;&#x8000;">
@@ -77,6 +79,9 @@
 <icon BUILTIN="button_ok"/>
 <icon BUILTIN="ksmiletris"/>
 </node>
+</node>
+<node CREATED="1587895020868" ID="ID_446828141" MODIFIED="1587895079576" TEXT="&#x805a;&#x7126;&#x6700;&#x521d;&#x95ee;&#x9898;&#xff0c;&#x4e0d;&#x8981;&#x53d1;&#x6563;">
+<node CREATED="1587895114713" ID="ID_1640604066" MODIFIED="1587895148694" TEXT="&#x8981;&#x4e13;&#x4e00;&#xff0c;&#x4e0d;&#x8981;&#x8d2a;&#x591a;"/>
 </node>
 </node>
 </node>
